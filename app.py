@@ -5,8 +5,14 @@ import os
 
 app = Flask(__name__)
 
+BASE_DIR = os.path.abspath(os.path.dirname(__file__))
+
+# Use the absolute path for the data folder
+DATA_FOLDER = os.path.join(BASE_DIR, 'data', 'csv_output')
+
+print(f"Current working directory: {os.getcwd()}")
+
 # Use the absolute path to the CSV files
-DATA_FOLDER = os.path.join("data", "csv_output")
 
 # Function to load and return data from a specific file
 def load_data(topic):
@@ -49,6 +55,7 @@ def load_data(topic):
     
     # Construct the absolute file path
     file_path = os.path.join(DATA_FOLDER, file_mapping[topic])
+    print(f"Checking if file exists: {file_path} -> {os.path.isfile(file_path)}")
 
     # Debugging: print the file path to ensure correctness
     print(f"Loading data from: {file_path}")
