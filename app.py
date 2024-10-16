@@ -55,6 +55,8 @@ def load_data(topic):
     
     # Construct the absolute file path
     file_path = os.path.join(DATA_FOLDER, file_mapping[topic])
+    print(f"File readable: {os.access(file_path, os.R_OK)}")
+
     print(f"Checking if file exists: {file_path} -> {os.path.isfile(file_path)}")
 
     # Debugging: print the file path to ensure correctness
