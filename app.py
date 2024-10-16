@@ -6,7 +6,7 @@ import os
 app = Flask(__name__)
 
 # Use the absolute path to the CSV files
-DATA_FOLDER = r"data\csv_output"
+DATA_FOLDER = os.path.join("data", "csv_output")
 
 # Function to load and return data from a specific file
 def load_data(topic):
