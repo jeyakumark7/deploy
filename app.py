@@ -20,8 +20,6 @@ def load_data(topic):
     file_mapping = {
         'Breast Cancer': 'Breast cancer.csv',  # Ensure file names match exactly
         'Cancer Prevention': 'Cancer prevention.csv', 
-        'Cancer survivors': 'Cancer survivors.csv',
-        'Cancer': 'Cancer Survivors.csv',
         'Complementary and alternative medicine':'Complementary and alternative medicine.csv',
         'Diagnosis and cancer':'Diagnosis and cancer.csv',
         'Ematology':'Ematology.csv',
