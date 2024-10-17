@@ -18,7 +18,7 @@ print(f"Current working directory: {os.getcwd()}")
 def load_data(topic):
     # Mapping the topic to its respective CSV file
     file_mapping = {
-        'Breast Cancer': 'Breast Cancer.csv',  # Ensure file names match exactly
+        'Breast Cancer': '1.csv',  # Ensure file names match exactly
         'Cancer Prevention': 'Cancer Prevention.csv',
         'Cancer survivors': 'Cancer survivors.csv',
         'Cancer': 'Cancer Survivors.csv',
